@@ -1,0 +1,18 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "memwatch"
+version = "0.1.0"
+description = "Warn before Fedora runs out of memory, with optional opt-in auto-kill"
+readme = "README.md"
+requires-python = ">=3.11"
+license = { text = "MIT" }
+dependencies = ["psutil>=5.9"]
+
+[project.scripts]
+memwatch = "memwatch.cli:main"
+
+[tool.setuptools]
+packages = ["memwatch"]
