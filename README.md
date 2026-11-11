@@ -22,14 +22,13 @@ It can also **optionally auto-kill** the largest offending process. This is
 
 ## Requirements
 
-- Python >= 3.11 (3.14 on this machine)
-- `psutil` (already installed)
+- Python >= 3.11
+- `psutil`
 - `notify-send` (from `libnotify`) for popups
 
 ## Quick start
 
 ```sh
-cd "/home/patrik/Dokument/Default Project"
 
 # one-shot check (exit code 0=normal 1=warn 2=critical 3=emergency)
 python3 -m memwatch check
